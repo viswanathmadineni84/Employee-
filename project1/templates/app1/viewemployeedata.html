@@ -1,0 +1,36 @@
+{%extends "app1/home.html"%}
+{%block body_block%}
+
+<center>
+
+	<h1>Employees Data</h1>
+	<table class="table table-bordered">
+		<thead>
+			<th>Emp name</th>
+			<th>Emp ID</th>
+			<th>Designation</th>
+			<th>Date of Joining</th>
+			<th>Department</th>
+			<th>Salary Package</th>
+			<th>Experience</th>
+			<th>Hr section</th>
+		</thead>
+{%for i in g%}
+		<tr>
+			<td>{{i.Emp_Name}}</td>			
+			<td>{{i.Emp_ID}}</td>
+			<td>{{i.Designation}}</td>
+			<td>{{i.Date_of_Joining}}</td>
+			<td>{{i.Department}}</td>
+			<td>{{i.Salary_Package}}</td>
+			<td>{{i.Experience}}</td>
+			<td><a href="/update/{{i.id}}"><button>Update</button></a><a href="/delete/{{i.id}}"><button>Delete</button></a></td>
+		</tr>
+{%endfor%}
+	</table>
+
+	<a href="/data"><button>Download</button></a>
+	<a href="/addemployee"><button>Add Employee</button></a>
+	<a href="/hrmanager"><button>Back To Hr manager</button></a>
+</center>
+{%endblock%}

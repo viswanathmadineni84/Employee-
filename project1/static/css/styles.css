@@ -1,0 +1,49 @@
+.a{
+	width: 99.3%;
+}
+.table thead th{
+  background-color: skyblue; /* Change the background color */
+  border: 1px solid #dee2e6;
+}
+.b{
+  display: inline-block;
+  width: 45%;
+  height: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.container {
+    display: flex;
+}
+
+/* Style for the left column */
+.left-column {
+    flex: 1; /* Take up remaining space */
+    background-color: white; /* Light gray background */
+    padding: 100px;
+}
+
+/* Style for the right column */
+.right-column {
+    flex: 1; /* Take up remaining space */
+    background-color: white; /* Lighter gray background */
+    padding: 100px;
+}
+
+.m{
+  background-color: orange;
+  width: 300px;
+  height: 70px;
+}
+
+.d{
+  width: 130px;
+  height: 100px;
+}
+
+.container-fluid{
+  height: 120px;
+  background-color: skyblue;
+
+}

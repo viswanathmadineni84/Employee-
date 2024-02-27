@@ -1,0 +1,23 @@
+{%extends "app1/home.html"%}
+{%block body_block%}
+<center>
+<h2>Latest News</h2>
+
+<table class="table table-bordered">
+	<thead>
+		<th>Details</th>
+	</thead>
+{%for i in h%}
+    <tr>
+    	<td>{{i.OCCATION}}</td>
+    </tr>
+
+
+{%endfor%}
+
+</table>
+
+<a href="/calenderholidays"><button>Calender Holidays</button></a>
+</center>
+
+{%endblock%}

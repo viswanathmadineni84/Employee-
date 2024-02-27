@@ -1,0 +1,23 @@
+{%extends "app1/home.html"%}
+{%block body_block%}
+
+<center>
+<h2>Holidays Calender</h2>
+<table class="table table-bordered">
+	<thead>
+		<th>DATE</th>
+		<th>DETAILS</th>
+	</thead>
+
+{%for i in f%}
+  <tr>
+  	<td>{{i.Date}}</td>
+  	<td>{{i.Occation}}</td>
+
+  </tr>
+{%endfor%}
+</table>
+
+<a href="/latestnews"><button>Latest News</button></a>
+</center>
+{%endblock%}

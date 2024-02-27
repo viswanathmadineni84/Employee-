@@ -1,0 +1,15 @@
+{%extends "app1/home.html"%}
+{%block body_block%}
+<br></br>
+<center>
+	<h2>Login Here </h2>
+	<form method="POST">
+		{%csrf_token%}
+		{{form.as_p}}
+
+		<button>Login</button>
+	</form>
+
+
+</center>
+{%endblock%}
